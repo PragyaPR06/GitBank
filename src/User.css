@@ -1,0 +1,115 @@
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    max-height: 90vh ;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .profile-card img {
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    object-fit: cover;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:3px solid lightblue;
+    background-color: lightblue;
+    width: 70%;
+    height:80%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .bio {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+  }
+  
+  .stat:last-child {
+    border-right: none;
+  }
+  
+  .github-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .github-link:hover,.profile-card .search-box button:hover{
+    background-color: #222;
+  }
+
+
+  .profile-card .search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vw;
+    padding: 1vw;
+  }
+
+  .profile-card .search-box input{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw;
+    border-radius:10px;
+  }
+  .profile-card .search-box button{
+    background-color: #333;
+    color: #fff;
+    padding: 1vw ;
+    border-radius: 10px;
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* function handleSearch(e){
+    const query = e.target.value;
+    if (query == "") return;
+    else{
+        axios
+        .get(`${api_url}${query}`)
+        .then((response) => {
+            setUser(response.data);
+        })
+        .catch((error) => {
+            alert.error("Error fetching user data: " + error);
+        })
+    }
+  } */
